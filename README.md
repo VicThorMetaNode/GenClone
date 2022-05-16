@@ -1,5 +1,6 @@
 #Next-GenFlow- Clone for job interview
 > **Started**: **14 May 2022** : https://genflow.com/
+ ![genclone](https://user-images.githubusercontent.com/98230162/168657852-2e27c47c-c694-4365-bdf7-049d7b57c4b2.jpg)
 This project's been fully built with ***NextJS***
 
 <p>📦NPM Packages used:</p>
@@ -18,4 +19,4 @@ This project's been fully built with ***NextJS***
 
 
 
-![genclone](https://user-images.githubusercontent.com/98230162/168657852-2e27c47c-c694-4365-bdf7-049d7b57c4b2.jpg)
+
