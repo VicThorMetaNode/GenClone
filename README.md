@@ -1,4 +1,4 @@
-#Next-GenFlow-Clone for job a interview
+#Next-GenFlow-Clone for a job interview
 > <p>**Started**: **14 May 2022** : https://genflow.com/</p>
 <p>This project's been fully built with ***NextJS***</p>
 
