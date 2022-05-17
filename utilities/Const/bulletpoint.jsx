@@ -26,7 +26,7 @@ const Bulletpoint = ({ desc1, desc2, desc3, desc4, desc5, desc6 }) => (
         color="#fff"
         p={2}
         mb={4}
-        boxShadow=" -1px 0px  0px #746f6fdf"
+        boxShadow=" -1px 0px  0px 0px #302e2edf"
       >
         {desc1}
       </ListItem>
@@ -37,7 +37,7 @@ const Bulletpoint = ({ desc1, desc2, desc3, desc4, desc5, desc6 }) => (
         fontWeight="100"
         color="#fff"
         p={2}
-        boxShadow=" -1px 0px  0px #746f6fdf"
+        boxShadow=" -1px 0px  0px 0px #302e2edf"
         mb={4}
         mt={6}
       >
@@ -50,7 +50,7 @@ const Bulletpoint = ({ desc1, desc2, desc3, desc4, desc5, desc6 }) => (
         fontWeight="100"
         color="#fff"
         p={2}
-        boxShadow=" -1px 0px  0px #746f6fdf"
+        boxShadow=" -1px 0px  0px 0px #302e2edf"
         mb={4}
         mt={6}
       >
@@ -63,7 +63,7 @@ const Bulletpoint = ({ desc1, desc2, desc3, desc4, desc5, desc6 }) => (
         fontWeight="100"
         color="#fff"
         p={2}
-        boxShadow=" -1px 0px  0px #746f6fdf"
+        boxShadow=" -1px 0px  0px 0px #302e2edf"
         mb={4}
         mt={6}
       >
@@ -76,7 +76,7 @@ const Bulletpoint = ({ desc1, desc2, desc3, desc4, desc5, desc6 }) => (
         fontWeight="100"
         color="#fff"
         p={2}
-        boxShadow=" -1px 0px  0px #746f6fdf"
+        boxShadow=" -1px 0px  0px 0px #302e2edf"
         mb={4}
         mt={6}
       >

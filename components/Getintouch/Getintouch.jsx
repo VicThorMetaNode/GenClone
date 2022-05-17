@@ -1,4 +1,4 @@
-import { React, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 //Import FORM HANDLER
 import { useForm, ValidationError } from "@formspree/react";
@@ -45,9 +45,10 @@ import FormAgency from "../Form/FormAgency";
 const Getintouch = () => {
   //MODAL CONST on click
   const { isOpen, onOpen, onClose } = useDisclosure();
+  //MODAL activate Creator or agency FORM
+  const [active, setActive] = useState("creatorForm");
   const initialRef = useRef();
   const finalRef = useRef();
-  const [showAgency, setShowAgency] = useState(false);
 
   return (
     <>
@@ -96,6 +97,7 @@ const Getintouch = () => {
                 fontWeight="100"
                 pl={6}
                 pr={6}
+                onClick={() => setActive("creatorForm")}
               >
                 Creator
               </Button>
@@ -109,7 +111,7 @@ const Getintouch = () => {
                 fontWeight="100"
                 pl={6}
                 pr={6}
-                onclick={() => setShowAgency(!showAgency)}
+                onClick={() => setActive("agencyForm")}
               >
                 Agency
               </Button>
@@ -118,30 +120,11 @@ const Getintouch = () => {
 
           <ModalCloseButton />
           <ModalBody pb={6}>
-            <FormCreator />
-            {showAgency && <FormAgency />}
+            <Box>
+              {active === "creatorForm" && <FormCreator />}
+              {active === "agencyForm" && <FormAgency />}
+            </Box>
           </ModalBody>
-
-          <ModalFooter>
-            {/* <Button
-              className="text-container"
-              textTransform="uppercase"
-              fontWeight="100"
-              colorScheme="blue"
-              mr={3}
-              type="submit"
-              disabled={state.submitting}
-            >
-              Send your message
-            </Button> */}
-            <Button
-              onClick={onClose}
-              bgColor="transparent"
-              border="2px solid #89adf5"
-            >
-              Cancel
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </>

@@ -37,7 +37,7 @@ const Header = () => {
         <Text
           textAlign="center"
           className="main-title"
-          fontSize="2.6rem"
+          fontSize="2.8rem"
           textTransform="uppercase"
           fontWeight="400"
           color="#fff"

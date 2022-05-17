@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Antonio&family=Jost&family=Kumbh+Sans&family=League+Spartan&family=Montserrat&family=Nunito+Sans&family=Pathway+Gothic+One&family=Roboto+Condensed&family=Yeseva+One&display=swap&family=Kanit');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Antonio&family=Jost&family=Kumbh+Sans&family=League+Spartan&family=Montserrat&family=Nunito+Sans&family=Pathway+Gothic+One&family=Roboto+Condensed&family=Yeseva+One&display=swap&family=Kanit&family=Mukta');
 
 /*----------------------------- SCROLLBAR ------------------------*/
 
@@ -25,7 +25,8 @@
   
     --font-montserrat: 'Montserrat', sans-serif;
     --font-antonio: 'Antonio', sans-serif;
-    --font-genclone: 'Raleway', sans-serif;
+    --font-genclone: 'Mukta', sans-serif;
+    --font-genclone2: 'Raleway', serif;
     --font-jost: 'Jost', sans-serif;
   --font-kumbh: 'Kumbh Sans', sans-serif;
   --font-spartan: 'League Spartan', sans-serif;
@@ -214,7 +215,11 @@ body {
 
 
  /*----------------------------- INTERNAL COMPONENTS ------------------------*/
-.main-title {
+ .genclone-title {
+  font-family: var(--font-genclone);
+  }
+
+ .main-title {
   font-family: var(--font-antonio) ;
  
 }
@@ -238,12 +243,5 @@ body {
 }
 
 
-.genclone-title {
-font-family: var(--font-genclone);
-}
 
-.logan {
-  background-image: url("https://assets.website-files.com/619c469f911ac333e104d701/620bc37f8ef2a933b4a54023_1.%20LOGAN%20PAUL-p-800.jpeg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+

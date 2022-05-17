@@ -42,13 +42,13 @@ const FormCreator = () => {
   }
   return (
     <>
-      <FormControl isRequired method="post" onSubmit={handleSubmit}>
-        <FormLabel className="text-container" fontWeight="300">
+      <FormControl method="post" onSubmit={handleSubmit}>
+        {/* <FormLabel className="text-container" fontWeight="300">
           Name
         </FormLabel>
         <Input placeholder="e.g Alex Smith" id="name" name="name" />
-        <ValidationError prefix="Name" field="name" errors={state.errors} />
-        <FormLabel className="text-container" fontWeight="300" htmlFor="email">
+        <ValidationError prefix="Name" field="name" errors={state.errors} /> */}
+        <FormLabel className="text-container" fontWeight="300">
           Email
         </FormLabel>
         <Input
@@ -56,10 +56,11 @@ const FormCreator = () => {
           id="email"
           type="email"
           name="email"
+          required
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-        <FormLabel className="text-container" fontWeight="300">
+        {/* <FormLabel className="text-container" fontWeight="300">
           Social username
         </FormLabel>
         <Input placeholder="e.g@username" id="username" name="username" />
@@ -74,7 +75,7 @@ const FormCreator = () => {
           name="nbrfollowers"
           min="10000"
           max="100000000"
-        />
+        /> */}
 
         <FormLabel className="text-container" fontWeight="300">
           Message
@@ -89,17 +90,26 @@ const FormCreator = () => {
           field="message"
           errors={state.errors}
         />
-        <Button
-          className="text-container"
-          textTransform="uppercase"
-          fontWeight="100"
-          colorScheme="blue"
-          mr={3}
-          type="submit"
-          disabled={state.submitting}
-        >
-          Send your message
-        </Button>
+        <ModalFooter>
+          <Button
+            type="submit"
+            disabled={state.submitting}
+            className="text-container"
+            textTransform="uppercase"
+            fontWeight="100"
+            colorScheme="blue"
+            m={3}
+          >
+            Send your message
+          </Button>
+          {/* <Button
+              onClick={onClose}
+              bgColor="transparent"
+              border="2px solid #89adf5"
+            >
+              Cancel
+            </Button> */}
+        </ModalFooter>
       </FormControl>
     </>
   );

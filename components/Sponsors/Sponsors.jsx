@@ -50,6 +50,7 @@ const Sponsors = () => {
             src="https://assets.website-files.com/619c469f911ac333e104d701/6207a49a0150ac70c27371ba_tubefilter.svg"
             alt="tuberfilter"
             ml={2}
+            mr={1}
           />
         </Stack>
       </Flex>

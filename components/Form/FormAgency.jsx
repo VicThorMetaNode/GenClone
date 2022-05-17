@@ -35,74 +35,45 @@ import {
 
 const FormAgency = () => {
   //FORM HANDLER on submit
-  const [state, handleSubmit] = useForm("mzboykqn");
+  const [state, handleSubmit] = useForm("mdobybaa");
   if (state.succeeded) {
-    return <p>Form Submitted ! Thank You !</p>;
+    return <p>Thanks for joining!</p>;
   }
   return (
     <>
-      <FormControl isRequired method="post" onSubmit={handleSubmit}>
-        <FormLabel className="text-container" fontWeight="300">
-          Agency Name
-        </FormLabel>
-        <Input
-          placeholder="e.g GenClone Agency"
-          id="agencyname"
-          name="agencyname"
-        />
-        <ValidationError
-          prefix="Name"
-          field="agencyname"
-          errors={state.errors}
-        />
-        <FormLabel className="text-container" fontWeight="300" htmlFor="email">
-          Agency Email
-        </FormLabel>
-        <Input
-          placeholder="e.g victhor@genclone.fake"
-          id="email"
+      <form className="fom-form" method="post" onSubmit={handleSubmit}>
+        <input
+          className="form-mail"
+          placeholder="MAIL"
           type="email"
+          id="email"
           name="email"
-        />
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
-
-        <FormLabel className="text-container" fontWeight="300">
-          Number of followers or subscribers
-        </FormLabel>
-        <Input
-          placeholder="e.g 14,000"
-          id="nbrfollowers"
-          type="number"
-          name="nbrfollowers"
-          min="10000"
-          max="100000000"
+          required
         />
 
-        <FormLabel className="text-container" fontWeight="300">
-          Message
-        </FormLabel>
-        <Textarea
-          placeholder="Enter Your message..."
-          id="message"
-          name="message"
-        />
+        <textarea id="message" name="message" />
         <ValidationError
           prefix="Message"
           field="message"
           errors={state.errors}
         />
+
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
         <Button
-          className="text-container"
-          textTransform="uppercase"
-          fontWeight="100"
-          colorScheme="blue"
-          mr={3}
+          bg="#e7af5d"
+          borderRadius="0px"
+          border="0.7px"
+          height="30px"
+          className="btn-submit"
           type="submit"
           disabled={state.submitting}
+          _focus={{
+            boxShadow: "0 0 1px 2px #e7af5d, 0 1px 1px rgba(0, 0, 0, .15)",
+          }}
         >
-          Send your message
+          SEND
         </Button>
-      </FormControl>
+      </form>
     </>
   );
 };

@@ -30,11 +30,12 @@ const Navbar = () => {
       <Flex>
         <Box pl={2}>
           <Text
-            paddingLeft="2"
+            pl="4"
+            pt="3"
             className="genclone-title"
-            fontSize="3.2rem"
+            fontSize="2.2rem"
             textTransform="uppercase"
-            fontWeight="900"
+            fontWeight="200"
             color="#fff"
           >
             GenClone
