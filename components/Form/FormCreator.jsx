@@ -32,85 +32,136 @@ import {
   FormHelperText,
   Textarea,
   Input,
+  VStack,
 } from "@chakra-ui/react";
 
 const FormCreator = () => {
   //FORM HANDLER on submit
   const [state, handleSubmit] = useForm("mzboykqn");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <>
+        <VStack
+          flexWrap="wrap"
+          justifyContent="center"
+          alignItems="center"
+          bg="#fff"
+          borderRadius="25px"
+          mt={7}
+        >
+          <Box m={5} p={2}>
+            <Container
+              textAlign="center"
+              className="title-span"
+              fontSize="2rem"
+              textTransform="uppercase"
+              fontWeight="400"
+              color="#000000"
+            >
+              {" "}
+              Message Sent !{" "}
+            </Container>
+          </Box>
+          <Box p={2}>
+            <Container
+              color="#000000"
+              textAlign="center"
+              className="text-container"
+              fontSize="1.1rem"
+              fontWeight="100"
+              mb={7}
+            >
+              Thanks for contacting us !
+            </Container>
+          </Box>
+        </VStack>
+      </>
+    );
   }
   return (
     <>
-      <FormControl method="post" onSubmit={handleSubmit}>
-        {/* <FormLabel className="text-container" fontWeight="300">
+      <form className="fom-form" method="post" onSubmit={handleSubmit}>
+        <FormLabel className="text-container" fontWeight="300">
           Name
         </FormLabel>
-        <Input placeholder="e.g Alex Smith" id="name" name="name" />
-        <ValidationError prefix="Name" field="name" errors={state.errors} /> */}
+        <Input
+          className="form-mail"
+          placeholder=" e.g Alex Smith"
+          type="string"
+          id="name"
+          name="name"
+          required
+        />
+        <ValidationError prefix="Name" field="name" errors={state.errors} />
+
         <FormLabel className="text-container" fontWeight="300">
           Email
         </FormLabel>
         <Input
-          placeholder="e.g alexsmith@gmail.com"
-          id="email"
+          className="form-mail"
+          placeholder="e.g alexsmith@test.net"
           type="email"
+          id="email"
           name="email"
           required
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-        {/* <FormLabel className="text-container" fontWeight="300">
+        <FormLabel className="text-container" fontWeight="300">
           Social username
         </FormLabel>
-        <Input placeholder="e.g@username" id="username" name="username" />
+        <Input
+          className="form-mail"
+          placeholder=" e.g @username"
+          type="string"
+          id="username"
+          name="username"
+          required
+        />
+        <ValidationError
+          prefix="Username"
+          field="username"
+          errors={state.errors}
+        />
 
         <FormLabel className="text-container" fontWeight="300">
           Number of followers or subscribers
         </FormLabel>
         <Input
-          placeholder="e.g 14,000"
-          id="nbrfollowers"
+          className="form-mail"
+          placeholder=" e.g 14.000"
           type="number"
+          id="nbrfollowers"
           name="nbrfollowers"
-          min="10000"
-          max="100000000"
-        /> */}
+          required
+        />
+        <ValidationError
+          prefix="Nbrfollowers"
+          field="nbrfollowers"
+          errors={state.errors}
+        />
 
         <FormLabel className="text-container" fontWeight="300">
           Message
         </FormLabel>
         <Textarea
-          placeholder="Enter Your message..."
           id="message"
           name="message"
+          placeholder="Type your message here"
         />
-        <ValidationError
-          prefix="Message"
-          field="message"
-          errors={state.errors}
-        />
-        <ModalFooter>
-          <Button
-            type="submit"
-            disabled={state.submitting}
-            className="text-container"
-            textTransform="uppercase"
-            fontWeight="100"
-            colorScheme="blue"
-            m={3}
-          >
-            Send your message
-          </Button>
-          {/* <Button
-              onClick={onClose}
-              bgColor="transparent"
-              border="2px solid #89adf5"
-            >
-              Cancel
-            </Button> */}
-        </ModalFooter>
-      </FormControl>
+
+        <Button
+          className="text-container"
+          textTransform="uppercase"
+          fontWeight="100"
+          colorScheme="blue"
+          m={3}
+          type="submit"
+          disabled={state.submitting}
+        >
+          SEND
+        </Button>
+      </form>
     </>
   );
 };

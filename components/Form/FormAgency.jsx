@@ -31,45 +31,103 @@ import {
   FormHelperText,
   Textarea,
   Input,
+  VStack,
 } from "@chakra-ui/react";
 
 const FormAgency = () => {
   //FORM HANDLER on submit
   const [state, handleSubmit] = useForm("mdobybaa");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <>
+        <VStack
+          flexWrap="wrap"
+          justifyContent="center"
+          alignItems="center"
+          bg="#fff"
+          borderRadius="25px"
+          mt={7}
+        >
+          <Box m={5} p={2}>
+            <Container
+              textAlign="center"
+              className="title-span"
+              fontSize="2rem"
+              textTransform="uppercase"
+              fontWeight="400"
+              color="#000000"
+            >
+              {" "}
+              Message Sent !{" "}
+            </Container>
+          </Box>
+          <Box p={2}>
+            <Container
+              color="#000000"
+              textAlign="center"
+              className="text-container"
+              fontSize="1.1rem"
+              fontWeight="100"
+              mb={7}
+            >
+              Thank you for contacting us !
+            </Container>
+          </Box>
+        </VStack>
+      </>
+    );
   }
   return (
     <>
       <form className="fom-form" method="post" onSubmit={handleSubmit}>
-        <input
+        <FormLabel className="text-container" fontWeight="300">
+          Agency Name
+        </FormLabel>
+        <Input
           className="form-mail"
-          placeholder="MAIL"
+          placeholder=" e.g GenClone inc."
+          type="string"
+          id="name"
+          name="name"
+          required
+        />
+        <ValidationError prefix="Name" field="name" errors={state.errors} />
+
+        <FormLabel className="text-container" fontWeight="300">
+          Agency Email
+        </FormLabel>
+        <Input
+          className="form-mail"
+          placeholder="e.g victhor@genclone.net"
           type="email"
           id="email"
           name="email"
           required
         />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-        <textarea id="message" name="message" />
+        <FormLabel className="text-container" fontWeight="300">
+          Message
+        </FormLabel>
+        <Textarea
+          id="message"
+          name="message"
+          placeholder="Type your message here"
+        />
         <ValidationError
           prefix="Message"
           field="message"
           errors={state.errors}
         />
 
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
         <Button
-          bg="#e7af5d"
-          borderRadius="0px"
-          border="0.7px"
-          height="30px"
-          className="btn-submit"
+          className="text-container"
+          textTransform="uppercase"
+          fontWeight="100"
+          colorScheme="blue"
+          m={3}
           type="submit"
           disabled={state.submitting}
-          _focus={{
-            boxShadow: "0 0 1px 2px #e7af5d, 0 1px 1px rgba(0, 0, 0, .15)",
-          }}
         >
           SEND
         </Button>

@@ -2,9 +2,11 @@ import React, { useRef, useState } from "react";
 
 // Import SWIPER
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import SWIPER styles
 import "swiper/css";
+
+//IMPORT FETCHING DATA FROM fetchApi folder
+import { baseUrl, fetchApi } from "../../utilities/FetchApi";
 
 // Import CHAKRA tools
 import {
@@ -26,15 +28,20 @@ import {
 
 //-------------- BROWSER  -----------
 
-const CarouselHeader = () => {
+const CarouselHeader = ({ followersCount }) => {
+  console.log(followersCount);
   return (
     <>
       <Swiper
         slidesPerView={2}
-        spaceBetween={10}
         loop={true}
-        pagination={{
-          clickable: true,
+        breakpoints={{
+          // when window width is >= 768px
+          768: {
+            width: 768,
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
         }}
         className="mySwiper"
       >
@@ -62,6 +69,8 @@ const CarouselHeader = () => {
             </Flex>
             <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
               <Stack
+                justifyContent="center"
+                alignItems="center"
                 direction="row"
                 spacing="0.50rem"
                 pos="fixed"
@@ -399,3 +408,15 @@ const CarouselHeader = () => {
 };
 
 export default CarouselHeader;
+
+//APi CALLS WITH A SPECIAL COMMAND MADE FOR NEXTjs : export async + return using Props
+export async function getStaticProps() {
+  const followersCount = await fetchApi(
+    `${baseUrl}/username-by-id?userid=13460080`
+  );
+  return {
+    props: {
+      followersCount,
+    },
+  };
+}
