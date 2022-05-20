@@ -1,5 +1,5 @@
 // ------------------ HOME PAGE -------------------
-
+import "../styles/Home.module.css";
 //------------ IMPORT ----------------------
 
 // Import REACT & NEXT tools
@@ -32,14 +32,14 @@ import {} from "react-icons/md";
 
 //------------ IMPORT COMPONENTS ----------------------
 import Header from "../components/Header/Header";
-import Whatwedo from "../components/WhatWeDo/Whatwedo";
+import Whatwedo from "../components/Whatwedo/Whatwedo";
 import Sponsors from "../components/Sponsors/Sponsors";
 import Offers from "../components/Offers/Offers";
 import Getintouch from "../components/Getintouch/Getintouch";
 import Paidcontent from "../components/PaidContent/Paidcontent";
 import Startbrand from "../components/Startbrand/Startbrand";
-
 import CarouselHeader from "../components/Carousel/CarouselHeader";
+
 
 
 //-------------- BROWSER  -----------
@@ -56,8 +56,9 @@ export default function Home() {
         <Paidcontent />
         <Getintouch />
         <Startbrand />
+        
         <Getintouch />
-
+        
         
       
     </>

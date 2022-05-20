@@ -1,0 +1,35 @@
+
+
+.animateMyDesc1 {
+    position:relative;
+   animation:moveDesc1 5s infinite;
+   
+   animation-iteration-count:1;
+   -webkit-animation:moveDesc1 1s infinite;
+  
+   -webkit-animation-iteration-count:1;
+}
+
+@keyframes moveDesc1
+ {
+   from {
+      left:-1000px;
+   }
+   
+   to {
+      left:0px;
+   }
+
+}
+
+@-webkit-keyframes moveDesc1 
+ {
+   from {
+      left:-1000px;
+   }
+   
+   to {
+      left:0px;
+   }
+
+}

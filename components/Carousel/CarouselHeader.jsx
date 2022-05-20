@@ -5,9 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import SWIPER styles
 import "swiper/css";
 
-//IMPORT FETCHING DATA FROM fetchApi folder
-import { baseUrl, fetchApi } from "../../utilities/FetchApi";
-
 // Import CHAKRA tools
 import {
   Center,
@@ -28,8 +25,7 @@ import {
 
 //-------------- BROWSER  -----------
 
-const CarouselHeader = ({ followersCount }) => {
-  console.log(followersCount);
+const CarouselHeader = () => {
   return (
     <>
       <Swiper
@@ -408,15 +404,3 @@ const CarouselHeader = ({ followersCount }) => {
 };
 
 export default CarouselHeader;
-
-//APi CALLS WITH A SPECIAL COMMAND MADE FOR NEXTjs : export async + return using Props
-export async function getStaticProps() {
-  const followersCount = await fetchApi(
-    `${baseUrl}/username-by-id?userid=13460080`
-  );
-  return {
-    props: {
-      followersCount,
-    },
-  };
-}

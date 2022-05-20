@@ -60,18 +60,10 @@ const Navbar = () => {
               <GoThreeBars />
             </MenuButton>
             <MenuList bg="#000000" color="#A6A6A6">
-              <MenuItem _hover={{ bg: "#000000", color: "#fff" }}>
-                Home
-              </MenuItem>
-              <MenuItem _hover={{ bg: "#000000", color: "#fff" }}>
-                Digital Products
-              </MenuItem>
-              <MenuItem _hover={{ bg: "#000000", color: "#fff" }}>
-                Physical Products
-              </MenuItem>
-              <MenuItem _hover={{ bg: "#000000", color: "#fff" }}>
-                Talent Management
-              </MenuItem>
+              <MenuItem>Home</MenuItem>
+              <MenuItem>Digital Products</MenuItem>
+              <MenuItem>Physical Products</MenuItem>
+              <MenuItem>Talent Management</MenuItem>
             </MenuList>
           </Menu>
         </Box>

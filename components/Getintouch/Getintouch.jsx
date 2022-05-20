@@ -1,8 +1,5 @@
 import React, { useRef, useState } from "react";
 
-//Import FORM HANDLER
-import { useForm, ValidationError } from "@formspree/react";
-
 // Import CHAKRA tools
 import {
   useDisclosure,
