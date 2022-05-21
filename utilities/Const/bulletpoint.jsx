@@ -57,7 +57,9 @@ const Bulletpoint = ({ desc1, desc2, desc3, desc4, desc5, desc6 }) => {
           mt={6}
           ref={myRef2}
         >
-          {desc2}
+          <span className={`${myParallaxdesc2 ? styles.animateMyDesc2 : ""}`}>
+            {desc2}{" "}
+          </span>
         </ListItem>
         <ListItem
           textAlign="Left"
@@ -71,7 +73,9 @@ const Bulletpoint = ({ desc1, desc2, desc3, desc4, desc5, desc6 }) => {
           mt={6}
           ref={myRef3}
         >
-          {desc3}
+          <span className={`${myParallaxdesc3 ? styles.animateMyDesc3 : ""}`}>
+            {desc3}{" "}
+          </span>
         </ListItem>
         <ListItem
           textAlign="Left"
@@ -85,7 +89,9 @@ const Bulletpoint = ({ desc1, desc2, desc3, desc4, desc5, desc6 }) => {
           mt={6}
           ref={myRef4}
         >
-          {desc4}
+          <span className={`${myParallaxdesc4 ? styles.animateMyDesc4 : ""}`}>
+            {desc4}{" "}
+          </span>
         </ListItem>
         <ListItem
           textAlign="Left"
@@ -99,7 +105,9 @@ const Bulletpoint = ({ desc1, desc2, desc3, desc4, desc5, desc6 }) => {
           mt={6}
           ref={myRef5}
         >
-          {desc5}
+          <span className={`${myParallaxdesc5 ? styles.animateMyDesc5 : ""}`}>
+            {desc5}{" "}
+          </span>
         </ListItem>
         <ListItem
           textAlign="Left"

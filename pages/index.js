@@ -39,6 +39,7 @@ import Getintouch from "../components/Getintouch/Getintouch";
 import Paidcontent from "../components/PaidContent/Paidcontent";
 import Startbrand from "../components/Startbrand/Startbrand";
 import CarouselHeader from "../components/Carousel/CarouselHeader";
+import BannerText from "../components/BannerText/BannerText";
 
 
 
@@ -55,8 +56,8 @@ export default function Home() {
         <Offers />
         <Paidcontent />
         <Getintouch />
+        <BannerText />
         <Startbrand />
-        
         <Getintouch />
         
         

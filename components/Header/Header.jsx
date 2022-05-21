@@ -1,9 +1,6 @@
 // Import REACT & NEXT tools
 import React from "react";
 
-//import Framer Motion
-import { motion } from "framer-motion";
-
 // Import CHAKRA tools
 import {
   Center,
@@ -18,11 +15,6 @@ import {
   Divider,
   Button,
 } from "@chakra-ui/react";
-
-// Import CHAKRA icons
-import { ArrowRightIcon } from "@chakra-ui/icons";
-// Import CHAKRA Third Party icons
-import { MdCheckCircle } from "react-icons/md";
 
 //-------------- Import Internal Const for chakra ui
 

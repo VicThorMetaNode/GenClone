@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Antonio&family=Jost&family=Kumbh+Sans&family=League+Spartan&family=Montserrat&family=Nunito+Sans&family=Pathway+Gothic+One&family=Roboto+Condensed&family=Yeseva+One&display=swap&family=Kanit&family=Mukta');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Antonio&family=Jost&family=Kumbh+Sans&family=League+Spartan&family=Montserrat&family=Nunito+Sans&family=Pathway+Gothic+One&family=Roboto+Condensed&family=Yeseva+One&display=swap&family=Kanit&family=Mukta&family=DotGothic16');
 
 /*----------------------------- SCROLLBAR ------------------------*/
 
@@ -22,12 +22,14 @@
   
   :root {
     /*----------------------------- FONTS FAMILY ------------------------*/
-  
-    --font-montserrat: 'Montserrat', sans-serif;
-    --font-antonio: 'Antonio', sans-serif;
-    --font-genclone: 'Mukta', sans-serif;
-    --font-genclone2: 'Raleway', serif;
-    --font-jost: 'Jost', sans-serif;
+    
+
+  --font-text-rolling: 'DotGothic16', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-antonio: 'Antonio', sans-serif;
+  --font-genclone: 'Mukta', sans-serif;
+  --font-genclone2: 'Raleway', serif;
+  --font-jost: 'Jost', sans-serif;
   --font-kumbh: 'Kumbh Sans', sans-serif;
   --font-spartan: 'League Spartan', sans-serif;
   --font-nunito: 'Nunito', sans-serif;
@@ -265,5 +267,11 @@ body {
   }
 }
 
+
+ /*----------------------------- FORM DESIGN ------------------------*/
+ 
+ .text-rolling {
+   font-family: var(--font-text-rolling);
+ }
 
 

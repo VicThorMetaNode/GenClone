@@ -1,5 +1,10 @@
 import React from "react";
 
+//Import Parallax Animation
+import { useInView } from "react-intersection-observer";
+
+import styles from "../../styles/Home.module.css";
+
 // Import CHAKRA tools
 import {
   Icon,
@@ -28,6 +33,7 @@ import BannerSMlight from "../../utilities/Const/bannerSMlight";
 //-------------- BROWSER  -----------
 
 const Paidcontent = () => {
+  const { ref: refBtnViewMore, inView: myParallaxBtnViewMore } = useInView();
   return (
     <>
       <Box bg="#fff" pb={6}>
@@ -130,6 +136,7 @@ const Paidcontent = () => {
           justifyContent="center"
           alignItems="center"
           pb={6}
+          ref={refBtnViewMore}
         >
           <Button
             backgroundColor="#ebd385"
@@ -139,7 +146,9 @@ const Paidcontent = () => {
             fontWeight="100"
             color="#000000"
             fontSize="1rem"
-            className="text-container"
+            className={`${
+              myParallaxBtnViewMore ? styles.animateMyBtnViewMore : ""
+            } ${"text-container"}`}
             p={4}
             mb={6}
             _hover={{ bg: "#e6ca6f" }}
