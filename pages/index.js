@@ -1,34 +1,14 @@
 // ------------------ HOME PAGE -------------------
+//IMPORT REACT COMPONENTS
+import React, { useEffect } from 'react'
+
 import "../styles/Home.module.css";
-//------------ IMPORT ----------------------
 
-// Import REACT & NEXT tools
-import React from "react";
-import NextLink from "next/link";
-import Image from "next/image";
+//IMPORT RELLAX
+import Rellax from 'rellax'
 
-//import Framer Motion
-import { motion } from "framer-motion";
 
-// Import CHAKRA tools
-import {
-  Center,
-  Box,
-  Container,
-  Text,
-  Link,
-  Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Button,
-} from "@chakra-ui/react";
 
-// Import CHAKRA icons
-import {} from "@chakra-ui/icons";
-// Import CHAKRA Third Party icons
-import {} from "react-icons/md";
 
 //------------ IMPORT COMPONENTS ----------------------
 import Header from "../components/Header/Header";
@@ -39,13 +19,18 @@ import Getintouch from "../components/Getintouch/Getintouch";
 import Paidcontent from "../components/PaidContent/Paidcontent";
 import Startbrand from "../components/Startbrand/Startbrand";
 import CarouselHeader from "../components/Carousel/CarouselHeader";
-import BannerText from "../components/BannerText/BannerText";
+
 
 
 
 //-------------- BROWSER  -----------
 
 export default function Home() {
+  useEffect(() => {
+    new Rellax(".rellax", { 
+    });
+  
+    }, []);
   return (
     <>
       
@@ -56,7 +41,7 @@ export default function Home() {
         <Offers />
         <Paidcontent />
         <Getintouch />
-        <BannerText />
+        
         <Startbrand />
         <Getintouch />
         

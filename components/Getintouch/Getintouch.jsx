@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 
 //Import Parallax Animation
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 
-import styles from "../../styles/Home.module.css";
+// import styles from "../../styles/Home.module.css";
 
 // Import CHAKRA tools
 import {
@@ -52,7 +52,7 @@ const Getintouch = () => {
   const initialRef = useRef();
   const finalRef = useRef();
   //BTN animation
-  const { ref: refBtnModal, inView: myParallaxBtnModal } = useInView();
+  // const { ref: refBtnModal, inView: myParallaxBtnModal } = useInView();
 
   return (
     <>
