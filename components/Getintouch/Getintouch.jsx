@@ -8,31 +8,14 @@ import React, { useRef, useState } from "react";
 // Import CHAKRA tools
 import {
   useDisclosure,
-  Center,
   Box,
-  Container,
-  Text,
-  Link,
   Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Spacer,
   Button,
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-  Textarea,
-  Input,
 } from "@chakra-ui/react";
 
 //-------------- Import Internal Const for chakra ui

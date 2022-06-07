@@ -268,10 +268,166 @@ body {
 }
 
 
+
+.img-swiper {
+  border-radius: 25px;
+  transition: .15s ease-in-out;
+}
+
+.img-swiper:hover {
+  border-radius: 31px;
+  transform: scale(1.01);
+}
+
  /*----------------------------- FORM DESIGN ------------------------*/
- 
+/*  
  .text-rolling {
    font-family: var(--font-text-rolling);
  }
 
 
+
+/*------------------ BULLET POINTS: CONST: TEXT ANIMATION --------------------------*/
+/* .animateMyDesc1 {
+    position:relative;
+   animation:moveDesc1  infinite;
+   
+   animation-iteration-count:1;
+   -webkit-animation:moveDesc1 1s infinite;
+  
+   -webkit-animation-iteration-count:1;
+}
+
+.animateMyDesc2 {
+   position:relative;
+  animation:moveDesc1  infinite;
+  
+  animation-iteration-count:1;
+  -webkit-animation:moveDesc1 1.2s infinite;
+ 
+  -webkit-animation-iteration-count:1;
+}
+
+.animateMyDesc3 {
+   position:relative;
+  animation:moveDesc1  infinite;
+  
+  animation-iteration-count:1;
+  -webkit-animation:moveDesc1 1.3s infinite;
+ 
+  -webkit-animation-iteration-count:1;
+}
+
+.animateMyDesc4 {
+   position:relative;
+  animation:moveDesc1  infinite;
+  
+  animation-iteration-count:1;
+  -webkit-animation:moveDesc1 1.4s infinite;
+ 
+  -webkit-animation-iteration-count:1;
+}
+
+.animateMyDesc5 {
+   position:relative;
+  animation:moveDesc1  infinite;
+  
+  animation-iteration-count:1;
+  -webkit-animation:moveDesc1 1.5s infinite;
+ 
+  -webkit-animation-iteration-count:1;
+}
+
+@keyframes moveDesc1
+ {
+   from {
+      left:-1000px;
+   }
+   
+   to {
+      left:0px;
+   }
+
+}
+
+@-webkit-keyframes moveDesc1 
+ {
+   from {
+      left:-1000px;
+   }
+   
+   to {
+      left:0px;
+   }
+
+} */ 
+
+
+/*------------------ BUTTON VIEW MORE: PAID CONTENT: TEXT ANIMATION --------------------------*/
+
+/* .animateMyBtnViewMore {
+   position:relative;
+   animation:moveBtnViewMore ;
+   animation-iteration-count:1;
+   -webkit-animation:moveBtnViewMore 1.3s;
+   -webkit-animation-iteration-count:1;
+} */
+/*------------------ BUTTON Modal ANIMATION --------------------------*/
+/* .animateMyBtnModal {
+   position:relative;
+   animation:moveBtnViewMore ;
+   animation-iteration-count:1;
+   -webkit-animation:moveBtnViewMore 1.3s;
+   -webkit-animation-iteration-count:1;
+} */
+
+/* @keyframes moveBtnViewMore
+ {
+   from {
+      bottom:-50px;
+   }
+   
+   to {
+      bottom:0px;
+   }
+
+}
+
+@-webkit-keyframes moveBtnViewMore
+ {
+   from {
+      bottom:-50px;
+   }
+   
+   to {
+      bottom:0px;
+   }
+
+} */
+
+/*------------------ ROLLING TEXT ANIMATION --------------------------*/
+
+
+/* .animateMyTextBanner {
+   position:relative;
+   animation:moveMyTextBanner ;
+   animation: move 3s steps(10) infinite  running slidein;
+   animation-iteration-count:infinite;
+   -webkit-animation:moveMyTextBanner 20s;
+   -webkit-animation-iteration-count:infinite;
+} */
+
+/* @keyframes moveMyTextBanner
+{
+   from {
+      margin-left: 50%;
+      width: 300%;
+  }
+
+  to {
+      margin-left: -150%;
+      width: 100%;
+  }
+} */
+
+ 

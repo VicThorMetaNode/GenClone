@@ -1,19 +1,7 @@
 import React from "react";
 
 // Import CHAKRA tools
-import {
-  Center,
-  Box,
-  Container,
-  Text,
-  Link,
-  Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Button,
-} from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 //-------------- Import Internal Const for chakra ui
 

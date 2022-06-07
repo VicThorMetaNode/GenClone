@@ -1,59 +1,65 @@
 import React from "react";
 
+import Image from "next/image";
+
 // Import CHAKRA tools
-import {
-  Title,
-  Image,
-  Center,
-  Stack,
-  Box,
-  Container,
-  Text,
-  Link,
-  Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Button,
-} from "@chakra-ui/react";
+import { Stack, Box, Flex } from "@chakra-ui/react";
 
 //-------------- Import Internal Const for chakra ui
 
 import BannerXStitle from "../../utilities/Const/BannerXStitle";
+
+//Import images
+import tc from "../../utilities/images/tc-logo.svg";
+import forbes from "../../utilities/images/forbes-logo.svg";
+import tuber from "../../utilities/images/tubefilter.svg";
 
 //-------------- BROWSER  -----------
 
 const Sponsors = () => {
   return (
     <>
-      <Box>
-        <BannerXStitle title="as featured in" />
+      <Box mb={[10, 20, 20]}>
+        <Box>
+          <BannerXStitle title="as featured in" />
+        </Box>
+        <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
+          <Stack direction="row">
+            <Box>
+              <Image
+                width="150px"
+                height="20px"
+                objectFit="fill"
+                src={tc}
+                alt="TechCrunch Logo"
+                mr={2}
+                ml={4}
+              />
+            </Box>
+            <Box>
+              <Image
+                width="150px"
+                height="20px"
+                objectFit="fill"
+                src={forbes}
+                alt="Forbes Logo"
+                ml={2}
+              />
+            </Box>
+            <Box>
+              <Image
+                width="150px"
+                height="20px"
+                objectFit="fill"
+                src={tuber}
+                alt="Tuber logo"
+                ml={2}
+                mr={1}
+              />
+            </Box>
+          </Stack>
+        </Flex>
       </Box>
-      <Flex flexWrap="wrap" justifyContent="center" alignItems="center" spaceBe>
-        <Stack direction="row">
-          <Image
-            boxSize="120px"
-            src="https://assets.website-files.com/619c469f911ac333e104d701/62083e70eb4d1cb85246de05_TC-logo.svg"
-            alt="TechCrunch Logo"
-            mr={2}
-            ml={4}
-          />
-          <Image
-            boxSize="120px"
-            src="https://assets.website-files.com/619c469f911ac333e104d701/6207a4afc4b72f745f67d803_Forbes%20logo.svg"
-            alt="Forbes Logo"
-            ml={2}
-          />
-          <Image
-            boxSize="120px"
-            src="https://assets.website-files.com/619c469f911ac333e104d701/6207a49a0150ac70c27371ba_tubefilter.svg"
-            alt="tuberfilter"
-            ml={2}
-            mr={1}
-          />
-        </Stack>
-      </Flex>
     </>
   );
 };

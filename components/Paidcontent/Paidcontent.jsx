@@ -1,26 +1,7 @@
-import React from "react";
-
-//Import Parallax Animation
-import { useInView } from "react-intersection-observer";
-
-import styles from "../../styles/Home.module.css";
+import Image from "next/image";
 
 // Import CHAKRA tools
-import {
-  Icon,
-  Center,
-  Box,
-  Container,
-  Text,
-  Link,
-  Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Button,
-  Image,
-} from "@chakra-ui/react";
+import { Icon, Box, Flex, Button } from "@chakra-ui/react";
 
 //Import Icons
 import { VscTriangleDown } from "react-icons/vsc";
@@ -30,10 +11,18 @@ import { VscTriangleDown } from "react-icons/vsc";
 import BannerPC from "../../utilities/Const/bannerPc";
 import BannerSMlight from "../../utilities/Const/bannerSMlight";
 
+//import pictures
+import mobile from "../../utilities/images/mobileapps.jpeg";
+import paid from "../../utilities/images/paidcontent.jpeg";
+import fitness from "../../utilities/images/fitnessguides.jpeg";
+import courses from "../../utilities/images/courses.jpeg";
+import membership from "../../utilities/images/membership.jpeg";
+import coaching from "../../utilities/images/coaching.jpeg";
+
 //-------------- BROWSER  -----------
 
 const Paidcontent = () => {
-  const { ref: refBtnViewMore, inView: myParallaxBtnViewMore } = useInView();
+  // const { ref: refBtnViewMore, inView: myParallaxBtnViewMore } = useInView();
   return (
     <>
       <Box bg="#fff" pb={6}>
@@ -57,9 +46,10 @@ const Paidcontent = () => {
               desc1="Create apps that top the charts"
             />
             <Image
-              boxSize="400px"
+              width="500px"
+              height="370px"
               objectFit="cover"
-              src="https://assets.website-files.com/619c469f911ac333e104d701/61e6e63773ac14c7f6a3eea4_APPS-V2-p-500.jpeg"
+              src={mobile}
               alt="Paid Content Image"
               p="0"
               m="0"
@@ -71,9 +61,10 @@ const Paidcontent = () => {
               desc1="Create and sell premium content"
             />
             <Image
-              boxSize="400px"
+              width="500px"
+              height="370px"
               objectFit="cover"
-              src="https://assets.website-files.com/619c469f911ac333e104d701/61e6bec12820382ff855e88e_CONTENT-p-500.jpeg"
+              src={paid}
               alt="Paid Content Image"
               p="0"
               m="0"
@@ -85,9 +76,10 @@ const Paidcontent = () => {
               desc1="Curate your own workout guides"
             />
             <Image
-              boxSize="400px"
+              width="500px"
+              height="370px"
               objectFit="cover"
-              src="https://assets.website-files.com/619c469f911ac333e104d701/621fcc4a47e7fd51d0a6b968_WORKOUTS-2-p-500.jpeg"
+              src={fitness}
               alt="Paid Content Image"
               p="0"
               m="0"
@@ -96,9 +88,10 @@ const Paidcontent = () => {
           <Box mb={4} p={8} bg="#fff" color="#000000">
             <BannerPC title="COURSES" desc1="Mentor your audience" />
             <Image
-              boxSize="400px"
+              width="500px"
+              height="370px"
               objectFit="cover"
-              src="https://assets.website-files.com/619c469f911ac333e104d701/621fcc4b292e190b658168b7_COURSES-p-500.jpeg"
+              src={courses}
               alt="Paid Content Image"
               p="0"
               m="0"
@@ -110,9 +103,10 @@ const Paidcontent = () => {
               desc1="Custom-made for your audience"
             />
             <Image
-              boxSize="400px"
+              width="500px"
+              height="370px"
               objectFit="cover"
-              src="https://assets.website-files.com/619c469f911ac333e104d701/61e6c019287dc085b6e4a22b_MEMBERSHIP%20CLUB-p-500.jpeg"
+              src={membership}
               alt="Paid Content Image"
               p="0"
               m="0"
@@ -121,9 +115,10 @@ const Paidcontent = () => {
           <Box mb={4} p={8} bg="#fff" color="#000000" boxShadow="md">
             <BannerPC title="COACHING" desc1="Partner with your audience" />
             <Image
-              boxSize="400px"
+              width="500px"
+              height="370px"
               objectFit="cover"
-              src="https://assets.website-files.com/619c469f911ac333e104d701/61e6c026514743d2c237a7d2_AFLETE-p-500.jpeg"
+              src={coaching}
               alt="Paid Content Image"
               p="0"
               m="0"
@@ -136,7 +131,7 @@ const Paidcontent = () => {
           justifyContent="center"
           alignItems="center"
           pb={6}
-          ref={refBtnViewMore}
+          // ref={refBtnViewMore}
         >
           <Button
             backgroundColor="#ebd385"
@@ -146,9 +141,7 @@ const Paidcontent = () => {
             fontWeight="100"
             color="#000000"
             fontSize="1rem"
-            className={`${
-              myParallaxBtnViewMore ? styles.animateMyBtnViewMore : ""
-            } ${"text-container"}`}
+            className="text-container"
             p={4}
             mb={6}
             _hover={{ bg: "#e6ca6f" }}

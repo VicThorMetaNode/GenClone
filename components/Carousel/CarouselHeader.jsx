@@ -1,28 +1,23 @@
-import React, { useRef, useState } from "react";
-
+import Image from "next/image";
 // Import SWIPER
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import SWIPER styles
 import "swiper/css";
 
 // Import CHAKRA tools
-import {
-  Center,
-  Box,
-  Container,
-  Text,
-  Link,
-  Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Button,
-  Image,
-  HStack,
-  Stack,
-} from "@chakra-ui/react";
+import { Box, Container, Text, Flex, Stack, HStack } from "@chakra-ui/react";
 
+//import people images
+import loganpaul from "../../utilities/images/loganpaul.jpeg";
+import lisa from "../../utilities/images/lisa.jpeg";
+import matt from "../../utilities/images/matt.jpeg";
+import kelsey from "../../utilities/images/kelsey.jpeg";
+import lilly from "../../utilities/images/lilly.jpeg";
+
+//import logo images
+import instagram from "../../utilities/images/instagram.svg";
+import youtube from "../../utilities/images/youtube.svg";
+import tiktok from "../../utilities/images/tiktok.svg";
 //-------------- BROWSER  -----------
 
 const CarouselHeader = () => {
@@ -35,7 +30,7 @@ const CarouselHeader = () => {
           // when window width is >= 768px
           768: {
             width: 768,
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
         }}
@@ -44,11 +39,12 @@ const CarouselHeader = () => {
         <SwiperSlide>
           <Box p={2}>
             <Image
-              boxSize="400px"
+              width="400px"
+              height="600px"
               objectFit="cover"
-              src="https://assets.website-files.com/619c469f911ac333e104d701/620bc37f8ef2a933b4a54023_1.%20LOGAN%20PAUL-p-800.jpeg"
+              src={loganpaul}
               alt="People Picture"
-              borderRadius="25px"
+              className="img-swiper"
             />
             <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
               <Box pos="fixed" bottom={10} mb={10}>
@@ -76,10 +72,11 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/6208506bf2bab0651bf30e7c_Instagram.svg"
-                      alt="Insta Logo"
+                      src={instagram}
+                      alt="Instagram Logo"
                     />
                     <Text className="text-container" fontSize="10px">
                       22.3M
@@ -89,9 +86,10 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/6208506b5ab47ce0e9ccf96f_Youtube.svg"
+                      src={youtube}
                       alt="Youtube Logo"
                     />
                     <Text className="text-container" fontSize="10px">
@@ -102,9 +100,10 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/61ad0dea4a9a630f52911bbf_tiktok.svg"
+                      src={tiktok}
                       alt="Tik Tok Logo"
                     />
                     <Text className="text-container" fontSize="10px">
@@ -120,11 +119,12 @@ const CarouselHeader = () => {
         <SwiperSlide>
           <Box p={2}>
             <Image
-              boxSize="400px"
-              borderRadius="25px"
+              width="400px"
+              height="600px"
               objectFit="cover"
-              src="https://assets.website-files.com/619c469f911ac333e104d701/620bc37c02b2b95b1ef554f5_16.%20LISA%20%26%20ROMANE-p-500.jpeg"
+              src={lisa}
               alt="People Picture"
+              className="img-swiper"
             />
             <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
               <Box pos="fixed" bottom={10} mb={10}>
@@ -150,10 +150,11 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/6208506bf2bab0651bf30e7c_Instagram.svg"
-                      alt="Insta Logo"
+                      src={instagram}
+                      alt="Instagram Logo"
                     />
                     <Text className="text-container" fontSize="10px">
                       2.7M
@@ -163,9 +164,10 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/6208506b5ab47ce0e9ccf96f_Youtube.svg"
+                      src={youtube}
                       alt="Youtube Logo"
                     />
                     <Text className="text-container" fontSize="10px">
@@ -176,9 +178,10 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/61ad0dea4a9a630f52911bbf_tiktok.svg"
+                      src={tiktok}
                       alt="Tik Tok Logo"
                     />
                     <Text className="text-container" fontSize="10px">
@@ -194,11 +197,12 @@ const CarouselHeader = () => {
         <SwiperSlide>
           <Box p={2}>
             <Image
-              boxSize="400px"
-              borderRadius="25px"
+              width="400px"
+              height="600px"
               objectFit="cover"
-              src="https://assets.website-files.com/619c469f911ac333e104d701/620bc37ac96d4d6d3b024691_3.%20MATT%20MORSIA-p-500.jpeg"
+              src={matt}
               alt="People Picture"
+              className="img-swiper"
             />
             <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
               <Box pos="fixed" bottom={10} mb={10}>
@@ -224,10 +228,11 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/6208506bf2bab0651bf30e7c_Instagram.svg"
-                      alt="Insta Logo"
+                      src={instagram}
+                      alt="Instagram Logo"
                     />
                     <Text className="text-container" fontSize="12px">
                       1M
@@ -237,9 +242,10 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/6208506b5ab47ce0e9ccf96f_Youtube.svg"
+                      src={youtube}
                       alt="Youtube Logo"
                     />
                     <Text className="text-container" fontSize="12px">
@@ -255,11 +261,12 @@ const CarouselHeader = () => {
         <SwiperSlide>
           <Box p={2}>
             <Image
-              boxSize="400px"
-              borderRadius="25px"
+              width="400px"
+              height="600px"
               objectFit="cover"
-              src="https://assets.website-files.com/619c469f911ac333e104d701/620bc3792ee80d50a3cd5c21_4.%20KELSEY%20CALEMINE-1-p-500.jpeg"
+              src={kelsey}
               alt="People Picture"
+              className="img-swiper"
             />
             <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
               <Box pos="fixed" bottom={10} mb={10}>
@@ -285,10 +292,11 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/6208506bf2bab0651bf30e7c_Instagram.svg"
-                      alt="Insta Logo"
+                      src={instagram}
+                      alt="Instagam Logo"
                     />
                     <Text className="text-container" fontSize="10px">
                       2.8M
@@ -298,9 +306,10 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/6208506b5ab47ce0e9ccf96f_Youtube.svg"
+                      src={youtube}
                       alt="Youtube Logo"
                     />
                     <Text className="text-container" fontSize="10px">
@@ -311,9 +320,10 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/61ad0dea4a9a630f52911bbf_tiktok.svg"
+                      src={tiktok}
                       alt="Tik Tok Logo"
                     />
                     <Text className="text-container" fontSize="10px">
@@ -328,11 +338,12 @@ const CarouselHeader = () => {
         <SwiperSlide>
           <Box p={2}>
             <Image
-              boxSize="400px"
-              borderRadius="25px"
+              width="400px"
+              height="600px"
               objectFit="cover"
-              src="https://assets.website-files.com/619c469f911ac333e104d701/620bc36b6af62cc633fee0bd_5.%20LILLY%20SABRI-p-500.jpeg"
+              src={lilly}
               alt="People Picture"
+              className="img-swiper"
             />
             <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
               <Box pos="fixed" bottom={10} mb={10}>
@@ -358,10 +369,11 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/6208506bf2bab0651bf30e7c_Instagram.svg"
-                      alt="Insta Logo"
+                      src={instagram}
+                      alt="Instagram Logo"
                     />
                     <Text className="text-container" fontSize="10px">
                       698K
@@ -371,9 +383,10 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/6208506b5ab47ce0e9ccf96f_Youtube.svg"
+                      src={youtube}
                       alt="Youtube Logo"
                     />
                     <Text className="text-container" fontSize="10px">
@@ -384,9 +397,10 @@ const CarouselHeader = () => {
                 <Box>
                   <HStack>
                     <Image
-                      boxSize="13px"
+                      width="13px"
+                      height="13px"
                       objectFit="cover"
-                      src="https://assets.website-files.com/619c469f911ac333e104d701/61ad0dea4a9a630f52911bbf_tiktok.svg"
+                      src={tiktok}
                       alt="Tik Tok Logo"
                     />
                     <Text className="text-container" fontSize="10px">

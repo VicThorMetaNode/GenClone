@@ -1,4 +1,5 @@
 // ------------------ HOME PAGE -------------------
+import dynamic from "next/dynamic";
 //IMPORT REACT COMPONENTS
 import React, { useEffect } from 'react'
 
@@ -11,14 +12,15 @@ import Rellax from 'rellax'
 
 
 //------------ IMPORT COMPONENTS ----------------------
-import Header from "../components/Header/Header";
+const Header = dynamic(() => import("../components/Header/Header"));
+const Getintouch  = dynamic(() => import("../components/Getintouch/Getintouch"));
+const CarouselHeader  = dynamic(() => import("../components/Carousel/CarouselHeader"));
 import Whatwedo from "../components/Whatwedo/Whatwedo";
 import Sponsors from "../components/Sponsors/Sponsors";
 import Offers from "../components/Offers/Offers";
-import Getintouch from "../components/Getintouch/Getintouch";
 import Paidcontent from "../components/PaidContent/Paidcontent";
 import Startbrand from "../components/Startbrand/Startbrand";
-import CarouselHeader from "../components/Carousel/CarouselHeader";
+
 
 
 
@@ -26,11 +28,6 @@ import CarouselHeader from "../components/Carousel/CarouselHeader";
 //-------------- BROWSER  -----------
 
 export default function Home() {
-  useEffect(() => {
-    new Rellax(".rellax", { 
-    });
-  
-    }, []);
   return (
     <>
       
