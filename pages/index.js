@@ -1,5 +1,4 @@
 // ------------------ HOME PAGE -------------------
-import dynamic from "next/dynamic";
 
 import "../styles/Home.module.css";
 
@@ -20,7 +19,7 @@ import {
 
 import Getintouch from "../components/Getintouch/Getintouch";
 import CarouselHeader from "../components/Carousel/CarouselHeader";
-import Paidcontent from "../components/PaidContent/Paidcontent";
+import Paidcontent from "../components/Paidcontent/Paidcontent";
 import Startbrand from "../components/Startbrand/Startbrand";
 
 //Import images

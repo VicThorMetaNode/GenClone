@@ -21,7 +21,7 @@ import coaching from "../../utilities/images/coaching.jpeg";
 
 //-------------- BROWSER  -----------
 
-export default function Paidcontent() {
+const Paidcontent = () => {
   return (
     <>
       <Box bg="#fff" pb={6}>
@@ -154,4 +154,5 @@ export default function Paidcontent() {
       </Flex>
     </>
   );
-}
+};
+export default Paidcontent;
