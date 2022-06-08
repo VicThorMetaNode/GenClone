@@ -1,19 +1,5 @@
-import React from "react";
-
 // Import CHAKRA tools
-import {
-  Center,
-  Box,
-  Container,
-  Text,
-  Link,
-  Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Container, Text, Flex } from "@chakra-ui/react";
 
 const BannerSM = ({ title, desc1 }) => (
   <Flex flexWrap="wrap" justifyContent="center" alignItems="center">

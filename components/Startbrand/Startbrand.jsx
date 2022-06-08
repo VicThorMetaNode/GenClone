@@ -1,25 +1,7 @@
 import React from "react";
 
 //-------------- Import CHAKRA tools
-import {
-  Icon,
-  Center,
-  Grid,
-  GridItem,
-  Box,
-  Container,
-  Text,
-  Link,
-  Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Button,
-  Stack,
-  VStack,
-  HStack,
-} from "@chakra-ui/react";
+import { Icon, Grid, GridItem, Box, Flex, VStack } from "@chakra-ui/react";
 
 //-------------- Import ICONS
 import {

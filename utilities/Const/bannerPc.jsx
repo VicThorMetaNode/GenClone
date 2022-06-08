@@ -1,20 +1,5 @@
-import React from "react";
-
 // Import CHAKRA tools
-import {
-  Center,
-  Box,
-  Container,
-  Text,
-  Link,
-  Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Button,
-  Image,
-} from "@chakra-ui/react";
+import { Container, Text } from "@chakra-ui/react";
 
 const BannerPC = ({ title, desc1 }) => {
   return (

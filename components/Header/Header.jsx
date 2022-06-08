@@ -1,6 +1,3 @@
-// Import REACT & NEXT tools
-import React from "react";
-
 // Import CHAKRA tools
 import { Box, Text } from "@chakra-ui/react";
 

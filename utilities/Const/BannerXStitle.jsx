@@ -1,19 +1,5 @@
-import React from "react";
-
 // Import CHAKRA tools
-import {
-  Center,
-  Box,
-  Container,
-  Text,
-  Link,
-  Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Text, Flex } from "@chakra-ui/react";
 
 const BannerXStitle = ({ title }) => {
   return (

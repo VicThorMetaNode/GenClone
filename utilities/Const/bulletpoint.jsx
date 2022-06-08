@@ -1,31 +1,19 @@
-import { useRef, useEffect, useState } from "react";
+// import { useRef, useEffect, useState } from "react";
 
 import styles from "../../styles/Home.module.css";
 
 //Import Parallax Animation
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 
 // Import CHAKRA tools
-import {
-  Center,
-  Box,
-  Container,
-  Text,
-  Link,
-  Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Button,
-} from "@chakra-ui/react";
+import { Box, List, ListItem } from "@chakra-ui/react";
 
 const Bulletpoint = ({ desc1, desc2, desc3, desc4, desc5, desc6 }) => {
-  const { ref: myRef1, inView: myParallaxdesc1 } = useInView();
-  const { ref: myRef2, inView: myParallaxdesc2 } = useInView();
-  const { ref: myRef3, inView: myParallaxdesc3 } = useInView();
-  const { ref: myRef4, inView: myParallaxdesc4 } = useInView();
-  const { ref: myRef5, inView: myParallaxdesc5 } = useInView();
+  // const { ref: myRef1, inView: myParallaxdesc1 } = useInView();
+  // const { ref: myRef2, inView: myParallaxdesc2 } = useInView();
+  // const { ref: myRef3, inView: myParallaxdesc3 } = useInView();
+  // const { ref: myRef4, inView: myParallaxdesc4 } = useInView();
+  // const { ref: myRef5, inView: myParallaxdesc5 } = useInView();
 
   return (
     <Box mb={4} p={8}>

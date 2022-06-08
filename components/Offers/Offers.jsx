@@ -1,5 +1,3 @@
-import React from "react";
-
 // Import CHAKRA tools
 import { Box } from "@chakra-ui/react";
 
