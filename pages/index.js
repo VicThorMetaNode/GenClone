@@ -18,14 +18,10 @@ import {
 
 //------------ IMPORT COMPONENTS ----------------------
 
-const Getintouch = dynamic(() => import("../components/Getintouch/Getintouch"));
-const CarouselHeader = dynamic(() =>
-  import("../components/Carousel/CarouselHeader")
-);
-const Paidcontent = dynamic(() =>
-  import("../components/PaidContent/Paidcontent")
-);
-const Startbrand = dynamic(() => import("../components/Startbrand/Startbrand"));
+import Getintouch from "../components/Getintouch/Getintouch";
+import CarouselHeader from "../components/Carousel/CarouselHeader";
+import Paidcontent from "../components/PaidContent/Paidcontent";
+import Startbrand from "../components/Startbrand/Startbrand";
 
 //Import images
 import tc from "../utilities/images/tc-logo.svg";
