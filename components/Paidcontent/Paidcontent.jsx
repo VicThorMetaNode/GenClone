@@ -21,8 +21,7 @@ import coaching from "../../utilities/images/coaching.jpeg";
 
 //-------------- BROWSER  -----------
 
-const Paidcontent = () => {
-  // const { ref: refBtnViewMore, inView: myParallaxBtnViewMore } = useInView();
+export default function Paidcontent() {
   return (
     <>
       <Box bg="#fff" pb={6}>
@@ -155,6 +154,4 @@ const Paidcontent = () => {
       </Flex>
     </>
   );
-};
-
-export default Paidcontent;
+}
