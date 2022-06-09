@@ -14,7 +14,8 @@
 <p>✔️Framer-Motion : an open source, production-ready library that's designed for all creative developers</p>
 <p>✔️Millify : converts long numbers into pretty, human-readable strings</p>
 <p>✔️nProgress : slim progress bars for Ajax'y applications. Inspired by Google, YouTube, and Medium</p>
-<p>✔️React-icons : a simple, modular and accessible icons library </p>
+<p>✔️React-icons : a simple, modular and accessible icons library </p> 
+<p>✔️React-intersection-observer :  Intersection Observer API to tell you when an element enters or leaves the viewport </p>
 
 > Note: this project is a *beta version* and is updated over time until an ultimate version is reached.
 
