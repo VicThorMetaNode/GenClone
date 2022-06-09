@@ -3,16 +3,9 @@ import React from "react";
 // Import CHAKRA tools
 import {
   Spacer,
-  Center,
   Box,
-  Container,
   Text,
-  Link,
   Flex,
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
   Button,
   Menu,
   MenuItem,

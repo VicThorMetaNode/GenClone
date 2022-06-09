@@ -72,7 +72,7 @@
   --color-hyperlink: #89adf5;;
   --color-hyperlink-hover: #5b8df1;
   --color-black: #008080;
-  --color-zil: hsl(173, 99%, 43%);
+  --color-zil: #01dac1;
   --color-zil-dark: #009987bc;
   --color-green: #9DE093;
   --color-yellow-green: #C5E17A;
@@ -180,12 +180,13 @@ body {
   
   a {
     font-size: var(--font-size-20);
-    text-decoration: none;
+    text-decoration: none !important;
     color: var(--color-hyperlink);
   }
 
   a:hover{
     color: var(--color-hyperlink-hover);
+    text-decoration: none !important;
   }
 
   h1,
@@ -213,7 +214,11 @@ body {
   }
 
 
-
+.intro-content {
+  font-family: var(--font-manrope);
+    font-size: var(--font-size-12);
+    color: var(--color-soap);
+}
 
 
  /*----------------------------- INTERNAL COMPONENTS ------------------------*/
@@ -242,6 +247,16 @@ body {
  
  .text-container {
    font-family: var(--font-montserrat) ;
+}
+
+.GenFlow-link {
+  font-size: var(--font-size-20);
+  text-decoration: none !important;
+  
+}
+
+.GenFlow-link:hover {
+  color: var(--color-hyperlink-hover);
 }
 
 
@@ -288,12 +303,12 @@ body {
 
 
 /*------------------ BULLET POINTS: CONST: TEXT ANIMATION --------------------------*/
-/* .animateMyDesc1 {
+ .animateMyDesc1 {
     position:relative;
-   animation:moveDesc1  infinite;
+    animation:moveDesc1  1;
    
    animation-iteration-count:1;
-   -webkit-animation:moveDesc1 1s infinite;
+   -webkit-animation:moveDesc1 1s 1;
   
    -webkit-animation-iteration-count:1;
 }
@@ -360,7 +375,7 @@ body {
       left:0px;
    }
 
-} */ 
+} 
 
 
 /*------------------ BUTTON VIEW MORE: PAID CONTENT: TEXT ANIMATION --------------------------*/

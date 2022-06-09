@@ -55,11 +55,7 @@ const Header = () => {
       </Box>
 
       <Box>
-        <BannerSM
-          desc1="We are a leading, all-in-one platform for creators.
-          We have been helping your favorite creators turn their passion into successful businesses since 2016.
-          We believe having an audience is the most valuable asset in the world."
-        />
+        <BannerSM desc1=" WARNING : This website is a clone and is part of a job interview's project, based on the idea that there's no better way to prove your skills than cloning the company's website (landing page so far) you'd like to work with. Therefore, this website has been created for professional purpose only. No business purpose. Be kind and explore it. Note: the form is real and fully functional. Feel free to contact me. Cheers !" />
       </Box>
     </>
   );

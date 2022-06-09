@@ -5,6 +5,7 @@ import { Box } from "@chakra-ui/react";
 
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import HeadTroduction from "./HeadTroduction";
 
 export default function Layout({ children }) {
   return (
@@ -14,6 +15,7 @@ export default function Layout({ children }) {
       </Head>
       <Box maxWidth="1280px" m="auto">
         <header>
+          <HeadTroduction />
           <Navbar />
         </header>
         <main>{children}</main>
