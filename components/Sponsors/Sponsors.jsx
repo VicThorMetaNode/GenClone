@@ -1,11 +1,32 @@
 import Image from "next/image";
 
 // Import CHAKRA tools
-import { Stack, Box, Flex } from "@chakra-ui/react";
+import { Stack, Box, Flex, Text } from "@chakra-ui/react";
 
 //-------------- Import Internal Const for chakra ui
 
-import BannerXStitle from "../../utilities/Const/BannerXStitle";
+const BannerXStitle = ({ title }) => {
+  return (
+    <>
+      <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
+        <Box mb={1} p={2}>
+          <Text
+            textAlign="center"
+            className="title-span"
+            fontSize="2rem"
+            textTransform="uppercase"
+            fontWeight="400"
+            pb={2}
+            mb={2}
+            color="#fff"
+          >
+            {title}
+          </Text>
+        </Box>
+      </Flex>
+    </>
+  );
+};
 
 //Import images
 import tc from "../../utilities/images/tc-logo.svg";

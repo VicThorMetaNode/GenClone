@@ -8,6 +8,8 @@ import React, { useRef, useState } from "react";
 // Import CHAKRA tools
 import {
   useDisclosure,
+  Text,
+  Container,
   Box,
   Flex,
   Button,
@@ -20,8 +22,61 @@ import {
 
 //-------------- Import Internal Const for chakra ui
 
-import BannerXStitle from "../../utilities/Const/BannerXStitle";
-import BannerSM from "../../utilities/Const/bannerSM";
+const BannerXStitle = ({ title }) => {
+  return (
+    <>
+      <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
+        <Box mb={1} p={2}>
+          <Text
+            textAlign="center"
+            className="title-span"
+            fontSize="2rem"
+            textTransform="uppercase"
+            fontWeight="400"
+            pb={2}
+            mb={2}
+            color="#fff"
+          >
+            {title}
+          </Text>
+        </Box>
+      </Flex>
+    </>
+  );
+};
+const BannerSM = ({ title, desc1 }) => (
+  <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
+    <Box mb={4} p={8}>
+      <Text
+        textAlign="center"
+        className="title-span"
+        fontSize="2rem"
+        textTransform="uppercase"
+        fontWeight="400"
+        pb={2}
+        mb={2}
+        color="#fff"
+      >
+        {" "}
+        {title}
+      </Text>
+
+      <Container
+        textAlign="center"
+        className="text-container"
+        fontSize="1.1rem"
+        fontWeight="100"
+        color="#fff"
+        pb={4}
+        mt={2}
+      >
+        {desc1}
+      </Container>
+    </Box>
+  </Flex>
+);
+
+//-------------- Import Internal Const for chakra ui FORMS
 import FormCreator from "../Form/FormCreator";
 import FormAgency from "../Form/FormAgency";
 
