@@ -2,7 +2,8 @@
 > <p>**Started**: **14 May 2022** :https://gen-clone-victhormetanode.vercel.app/</p>
 <p>This project's been fully built with ***NextJS***</p>
 
- ![genclone](https://user-images.githubusercontent.com/98230162/168657852-2e27c47c-c694-4365-bdf7-049d7b57c4b2.jpg)
+ ![genclone](https://user-images.githubusercontent.com/98230162/218260295-194f241a-2264-4ceb-80ad-6e485962cd64.PNG)
+
 
 <p>📦NPM Packages used:</p>
 <p>✔️Nodemon : refresh server every time a change is made</p>
